@@ -12,7 +12,7 @@ Diese App steht in keiner Verbindung zu CGP Grey, Mindbug, Nerdlab, Wizards of t
 
 
 ## Engish Version
-# Lifepointcounter Blue Applications - Daniel Correnz
+# Lifepointcounter by Blue Applications - Daniel Correnz
 
 This counter is a supporing app for any card- and boardgame. I wrote this app to use playing "Mindbug". It is also viable for Magic the Gathering.
 
