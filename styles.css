@@ -1,0 +1,194 @@
+body{
+    color: white;
+    margin: 0;
+    background-image: url(./images/background-editor.svg);
+}
+div{
+    display: grid;
+    position: absolute;
+}
+span{
+    margin: 0;
+}
+button{
+    color: white;
+}
+
+#mainBody{
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+}
+
+#mainBody div{
+    background-size: cover;
+}
+#mainBody button{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    border-radius: 50%;
+}
+
+/*LEBENSPUNKTEZÄHLER GRÖßE*/
+#life1counter, #life2counter{
+    background-image: url(./images/hexButton1.svg);
+    height: 56vw;
+    width: 64vw;
+    align-items: center;
+    justify-items: center;
+}
+#life1text{
+    font-size: 44vw;
+}
+#life2text{
+    font-size: 44vw;
+    display: inline-block;
+    rotate: 180deg;
+}
+.lifeChange{
+    background-image: url(./images/hexButton2.svg);
+    height: 28vw;
+    width: 32vw;
+    opacity: .6;
+}
+.lifeChange button{
+    font-size: 20vw;
+}
+
+
+/*MÜNZWURF wer anfängt*/
+#coin{
+    height: 14vw;
+    width: 16vw;
+    top: -7vw;
+    right: 42vw;
+}
+.flip-animation{
+    animation-name: coinrotation;
+    animation-duration: 2s;
+    background-repeat: no-repeat;
+}
+@keyframes coinrotation{
+    0% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 0deg;
+    }
+    8% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 30deg;
+    }
+    16% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 60deg;
+    }
+    24% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 90deg;
+    }
+    32% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 120deg;
+    }
+    40% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 150deg;
+    }
+    48% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 180deg;
+    }
+    56% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 210deg;
+    }
+    64% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 240deg;
+    }
+    72% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 270deg;
+    }
+    80% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 300deg;
+    }
+    88% {
+        height: 0vw;
+        top: 0vw;
+        rotate: 330deg;
+    }
+    96% {
+        height: 10vw;
+        top: -5vw;
+        rotate: 350deg;
+    }
+    100% {
+        height: 14vw;
+        top: -7vw;
+        background-size: 100% 100%;
+        rotate: 360deg;
+    }
+}
+
+/*STERN*/
+#star{
+    height: 30vw;
+    width: 60vw;
+    top: -15vw;
+    right: 20vw;
+    background-image: url(./images/star.svg);
+    background-size: contain;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+.hidden{
+    opacity: 0;
+}
+.shown{
+    opacity: 1;
+}
+
+/*LEBENSPUNKTEZÄHLER POSITIONEN*/
+#life1counter{
+    top: 10vw;
+    left: 2vw;
+}
+#life1plus{
+    top: 8vw;
+    left: 62vw;
+}
+#life1minus{
+    top: 40vw;
+    left: 62vw;
+}
+
+#life2counter{
+    top: -66vw;
+    right: 2vw;
+}
+#life2plus{
+    top: -36vw;
+    right: 62vw;
+}
+#life2minus{
+    top: -68vw;
+    right: 62vw;
+}
